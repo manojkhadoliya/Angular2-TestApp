@@ -1,0 +1,13 @@
+{
+  "eventType": "type-mosuedown",
+  "eventName": "Event Name",
+  "altKey": false,
+  "bubbles": true,
+  "button": 0,
+  "buttons": 0,
+  "cancelBubble": false,
+  "cancelable": true,
+  "charCode": "NA",
+  "clientX": 72,
+  "clientY": 77
+}
