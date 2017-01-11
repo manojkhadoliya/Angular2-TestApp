@@ -1,6 +1,13 @@
 <ul>
-      <li *ngFor="let prty of properties">
-        <div class="propertyName">{{prty.name}}</div>
-        <div class = "propertyData"> Data : &#123; isTrusted :{{prty.data.isTrusted}}, Button : {{prty.data.button==0?true:false}} &#125; </div>
-         </li>
+  <li *ngFor="let prty of properties">
+    <div class="propertyName">{{prty.name}}</div>
+    <div class="propertyData"> Data : &#123; isTrusted :{{prty.data.isTrusted}}, Button : {{prty.data.button==0?true:false}} &#125; </div>
+  </li>
+</ul>
+
+<a class="btn btn-default" (click)='getAllBooks()'>Get Books</a>
+<ul [hidden]="!isBook">
+  <li  *ngFor="let book of books" [hidden]="book.title==undefined ? true : false || book.price==undefined ? true : false" >
+    <div  class="bookTitle" [ngClass]="setClasses(book)">{{book.title}} : {{book.price}}</div>
+  </li>
 </ul>

@@ -8,7 +8,8 @@
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test",
     "pree2e": "webdriver-manager update",
-    "e2e": "protractor"
+    "e2e": "protractor",
+    "build" : "ng build && node server.js"
   },
   "private": true,
   "dependencies": {
@@ -22,10 +23,12 @@
     "@angular/platform-browser-dynamic": "2.2.3",
     "@angular/router": "3.2.3",
     "angular2": "2.4.2",
+    "body-parser": "^1.15.2",
     "bootstrap": "3.3.7",
     "core-js": "^2.4.1",
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.3",
+    "express": "^4.14.0",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.12",
     "systemjs": "0.19.22",
